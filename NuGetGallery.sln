@@ -1,13 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{96E4AFF8-D3A1-4102-ADCF-05F186F916A9}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
-EndProject
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{05998089-58F5-4A84-8C11-C5C6244A6F89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{B9B19787-DCC0-489E-9173-36A32C6B6848}"
@@ -37,6 +30,11 @@ EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "NuGetGallery.Cloud", "src\NuGetGallery.Cloud\NuGetGallery.Cloud.ccproj", "{0041ACA0-30EC-4554-8C7C-0AF810F3086F}"
 EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "NuGetGallery.Backend.Cloud", "src\NuGetGallery.Backend.Cloud\NuGetGallery.Backend.Cloud.ccproj", "{1D0164B6-92D4-455A-AC68-C30B61733748}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9CBDAAC3-38DC-4727-9601-CEFCA50F26A7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,11 +75,9 @@ Global
 		{8AC9E39E-366C-47E5-80AE-38E71CD31386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AC9E39E-366C-47E5-80AE-38E71CD31386}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0041ACA0-30EC-4554-8C7C-0AF810F3086F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
