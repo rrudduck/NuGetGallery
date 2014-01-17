@@ -1262,6 +1262,7 @@
     <Content Include="Content\font\fontawesome-webfont.woff" />
     <Content Include="Content\font\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\nuget-staging-frontend.pubxml" />
+    <None Include="Properties\PublishProfiles\packages.ambitenergy.com.pubxml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
@@ -1398,7 +1399,7 @@
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Web.config" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
-    <Content Include="App_Data\Files\Content\Alert.md" />
+    <Content Include="App_Data\Files\Content\_Alert.md" />
     <Content Include="Areas\Admin\Views\Lucene\Index.cshtml">
       <SubType>Code</SubType>
     </Content>
