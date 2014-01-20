@@ -139,6 +139,15 @@ namespace NuGetGallery
                          (
                             String.Equals(p.NormalizedVersion, SemanticVersionExtensions.Normalize(version), StringComparison.OrdinalIgnoreCase)
                          ));
+
+                if ( package == null )
+                {
+                    package = packageVersions.SingleOrDefault(
+                        p => p.PackageRegistration.Id.Equals( id, StringComparison.OrdinalIgnoreCase ) &&
+                            (
+                                String.Equals( p.Version, version, StringComparison.OrdinalIgnoreCase )
+                                ) );
+                }
             }
             return package;
         }
