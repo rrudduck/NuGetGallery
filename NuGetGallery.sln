@@ -4,6 +4,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{05998089-58F5-4A84-8C11-C5C6244A6F89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{B9B19787-DCC0-489E-9173-36A32C6B6848}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{96E4AFF8-D3A1-4102-ADCF-05F186F916A9}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{05998089-58F5-4A84-8C11-C5C6244A6F89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operations", "Operations", "{2ECA1159-9B9D-4D65-95AF-F14337FD3DA6}"
 EndProject
@@ -78,6 +87,11 @@ Global
 		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6B1A52-4D26-4946-9DDD-416D01A1ADBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FB56455-C688-44AE-95F1-48FFCB199BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0041ACA0-30EC-4554-8C7C-0AF810F3086F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
