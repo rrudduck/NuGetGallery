@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="NuGetGallery.Core.nuspec" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
