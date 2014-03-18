@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
 
@@ -32,11 +33,22 @@ namespace NuGetGallery
 
         public bool IsOwner(IPrincipal user)
         {
-            if (user == null || user.Identity == null)
+            try
             {
-                return false;
+                if (user == null || user.Identity == null)
+                {
+                    return false;
+                }
+
+                return user.IsAdministrator() || Owners.Any(u => u.Username == user.Identity.Name);
             }
-            return user.IsAdministrator() || Owners.Any(u => u.Username == user.Identity.Name);
+            catch ( SystemException )
+            {
+                // If the user is not logged in, windows authentication can fail if there is no trust between
+                // the users domain and the domain where the server is being hosted.
+            }
+
+            return false;
         }
     }
 }
