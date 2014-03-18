@@ -195,15 +195,22 @@ namespace NuGetGallery
 
         public static bool IsOwner(this PackageRegistration package, IPrincipal user)
         {
-            if (package == null)
+            try
             {
-                throw new ArgumentNullException("package");
+                if ( user == null || user.Identity == null )
+                {
+                    return false;
+                }
+
+                return user.IsAdministrator() || package.Owners.Any( u => u.Username == user.Identity.Name );
             }
-            if (user == null || user.Identity == null)
+            catch ( SystemException )
             {
-                return false;
+                // If the user is not logged in, windows authentication can fail if there is no trust between
+                // the users domain and the domain where the server is being hosted.
             }
-            return user.IsAdministrator() || package.Owners.Any(u => u.Username == user.Identity.Name);
+
+            return false;
         }
 
         public static bool IsOwner(this PackageRegistration package, User user)
